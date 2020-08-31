@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
     <e p="C:\Users\Jonathan\.Rider2019.2\system\extResources" t="IncludeRecursive" />
@@ -36,6 +36,15 @@
               <e p="AgentConfig.cs" t="Include" />
               <e p="Predator.cs" t="Include" />
               <e p="World.cs" t="Include" />
+            </e>
+          </e>
+          <e p="SpaceBattle Scene" t="Include">
+            <e p="Scripts" t="Include">
+              <e p="AsteroidField.cs" t="Include" />
+              <e p="Explode.cs" t="Include" />
+              <e p="Meteor.cs" t="Include" />
+              <e p="Pursue.cs" t="Include" />
+              <e p="RandomMovement.cs" t="Include" />
             </e>
           </e>
         </e>

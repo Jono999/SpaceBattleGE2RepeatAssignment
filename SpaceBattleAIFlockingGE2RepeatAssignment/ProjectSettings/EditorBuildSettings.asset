@@ -4,5 +4,8 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/SpaceBattle Scene/Asteroid Belt.unity
+    guid: 4f4e273fd56307644b2c4aaf88aa7bb3
   m_configObjects: {}

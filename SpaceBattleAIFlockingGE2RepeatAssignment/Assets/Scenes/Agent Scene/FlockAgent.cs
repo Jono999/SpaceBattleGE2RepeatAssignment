@@ -35,7 +35,27 @@ public class FlockAgent : MonoBehaviour
     }
     public void Move(Vector3 velocity)
     {
-        transform.forward = velocity;
-        transform.position += velocity * Time.deltaTime;
+        if (transform.forward != Vector3.zero)
+        {
+            transform.forward = velocity;
+            transform.position += velocity * Time.deltaTime;
+        }
+        else
+        {
+            transform.position = transform.position;
+        }
+//        transform.forward = velocity;
+//        transform.position += velocity * Time.deltaTime;
+    }
+    
+    public Vector3 SeekForce(Vector3 target)
+    {
+        Vector3 velocity = transform.forward;
+        float maxSpeed = 5f;
+        
+        Vector3 desired = target - transform.position;
+        desired.Normalize();
+        desired *= maxSpeed;
+        return desired - velocity;
     }
 }

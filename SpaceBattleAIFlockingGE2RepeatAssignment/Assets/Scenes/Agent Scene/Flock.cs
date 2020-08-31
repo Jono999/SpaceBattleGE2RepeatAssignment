@@ -5,14 +5,15 @@ using UnityEngine;
 public class Flock : MonoBehaviour
 {
     public FlockAgent agentPrefab;
+    //public FlockAgent[] agentPrefabs;
     List<FlockAgent> agents = new List<FlockAgent>();
     public FlockBehaviour behaviour;
 
-    [Range(10, 50)] public int startingCount = 25;
+    [Range(1, 50)] public int startingCount = 25;
     private const float AgentDensity = .38f;//.25f;//.5f;//1f;//.08f;
 
-    [Range(1f, 100f)] public float driveFactor = 10f;
-    [Range(1f, 100f)] public float maxSpeed = 5f;
+    [Range(0f, 100f)] public float driveFactor = 10f;
+    [Range(0f, 100f)] public float maxSpeed = 5f;
     [Range(1f, 10f)] public float neighbourRadius = 2f;
     [Range(0f, 1f)] public float avoidanceRadiusMultiplier = .5f;
 
